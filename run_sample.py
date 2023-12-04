@@ -24,7 +24,7 @@ if __name__ == '__main__':
 
     # Environment
     parser.add_argument("--num_workers", default=os.cpu_count() // 2, type=int)
-    parser.add_argument("--voc12_root", default='/mnt/vLinuxData/Segdatasets/voc/VOCdevkit/VOC2012', type=str,
+    parser.add_argument("--voc12_root", default='~/VOCdevkit/VOC2012', type=str,
                         help="Path to VOC 2012 Devkit, must contain ./JPEGImages as subdirectory.")
 
     # Dataset
@@ -84,27 +84,26 @@ if __name__ == '__main__':
     parser.add_argument("--bes_weights_name", default="sess/res50_bes.pth", type=str)
     parser.add_argument("--cam_vis_dir", default="result/cam_vis", type=str)
     parser.add_argument("--boundary_label_dir", default="result/boundary_label_certain_salbg", type=str)
-    #"/mnt/vLinuxData/shark_data/dwz/DL/linux_share/BES-main/result/boundary_label/"
+
 
     parser.add_argument("--sem_seg_out_dir", default="result/sem_seg", type=str)
 
     # Step
-    parser.add_argument("--train_cam_pass", default=False)
-    parser.add_argument("--make_cam_pass", default=False)
-    parser.add_argument("--eval_cam_pass", default=False)
-    parser.add_argument("--make_boundary_label_pass", default=False)
+    parser.add_argument("--train_cam_pass", default=True)
+    parser.add_argument("--make_cam_pass", default=True)
+    parser.add_argument("--eval_cam_pass", default=True)
+    parser.add_argument("--make_boundary_label_pass", default=True)
     parser.add_argument("--train_bes_pass", default=True)
     parser.add_argument("--make_sem_seg_pass", default=True)
     parser.add_argument("--eval_sem_seg_pass", default=True)
 
     args = parser.parse_args()
     
-    args.log_name=args.log_name+'_'+str(args.salbound_thres) +'_'+args.newL + 'seg' + str(args.sem_seg_bg_thres)
-    args.bes_weights_name=args.bes_weights_name+'_'+str(args.salbound_thres) + '_' + args.newL
-    args.cam_vis_dir=args.cam_vis_dir+'_'+str(args.salbound_thres) +'_'+  args.newL
+    args.log_name=args.log_name
+    args.bes_weights_name=args.bes_weights_name+'_'+str(args.salbound_thres)
+    args.cam_vis_dir=args.cam_vis_dir+'_'+str(args.salbound_thres)
     args.boundary_label_dir=args.boundary_label_dir+'_'+str(args.salbound_thres)
-    #args.boundary_label_dir = "/mnt/vLinuxData/shark_data/dwz/DL/linux_share/BES-main/result/boundary_label/"
-    args.sem_seg_out_dir=args.sem_seg_out_dir+'_'+str(args.salbound_thres) +'_'+ args.newL + 'seg' + str(args.sem_seg_bg_thres)
+    args.sem_seg_out_dir=args.sem_seg_out_dir+'_'+str(args.salbound_thres)
 
     fix_seed(args.seed)
     os.makedirs("sess", exist_ok=True)
