@@ -25,7 +25,8 @@ if __name__ == '__main__':
     # Environment
     parser.add_argument("--num_workers", default=os.cpu_count() // 2, type=int)
     parser.add_argument("--voc12_root", default='~/VOCdevkit/VOC2012', type=str,
-                        help="Path to VOC 2012 Devkit, must contain ./JPEGImages as subdirectory.")
+                        help="Path to VOC 2012 Devkit, must contain ./JPEGImages and ./Sal as subdirectory.
+                        The term ./Sal refers to the directory where saliency maps are stored, and it must be placed in this location.")
 
     # Dataset
     parser.add_argument("--train_aug_list", default="voc12/train_aug.txt", type=str)
