@@ -1,6 +1,6 @@
 # Salient-Boundary-Guided Pseudo-Pixel Supervision for Weakly-Supervised Semantic Segmentation
->[Salient-Boundary-Guided Pseudo-Pixel Supervision for Weakly-Supervised Semantic Segmentation]
->(https://ieeexplore.ieee.org/document/10363373)
+>[Salient-Boundary-Guided Pseudo-Pixel Supervision for Weakly-Supervised Semantic Segmentation](https://ieeexplore.ieee.org/document/10363373)
+>
 In this paper, we propose a novel Saliency-guided Boundary Extraction (SBE) framework for supervising WSSS. Our SBE approach employs saliency maps(SMs) to guide the object boundary detection and the attention of CAMs towards foreground regions during the propagation of the coarse localization maps, resulting in highquality pixel-level pseudo masks. The pseudo masks can be further serve as category labels for supervising an off-the-shelf semantic segmentation network such as the DeepLab-v2.
 
 ## abstract
