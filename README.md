@@ -21,6 +21,13 @@ Specify the VOC dataset path and run the command
 python run_sample.py --voc12_root xxxxx
 ```
 
+## perfermance
+ | Dataset | mIoU(val) | mIoU(test) |
+| --- | --- | --- |
+| PASCAL VOC	 | 71.7 | 71.2 |
+| MS COCO	 | 39.1 | --- |
+
+
 ## citation
 If you use our codes and models in your research, please cite:
 >@ARTICLE{10363373,
@@ -38,12 +45,3 @@ If you use our codes and models in your research, please cite:
 
 If there is any bug or confusion, I am glad to discuss with you. 
 
-@ARTICLE{10363373,
-  author={Shi, Min and Deng, Weizhao and Yi, Qingming and Liu, Weiping and Luo, Aiwen},
-  journal={IEEE Signal Processing Letters}, 
-  title={Salient-Boundary-Guided Pseudo-Pixel Supervision for Weakly-Supervised Semantic Segmentation}, 
-  year={2023},
-  volume={},
-  number={},
-  pages={1-5},
-  doi={10.1109/LSP.2023.3343945}}
