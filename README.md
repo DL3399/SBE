@@ -22,6 +22,8 @@ supervision for accurate semantic segmentation. Specifically, our
 method achieves 71.7% mIoU and 39.1% mIoU on the validation
 sets of PASCAL VOC 2012 and MS COCO 2014, respectively.
 
+## framework
+![framework](https://github.com/DL3399/SBE/blob/main/1703999985389.jpg)
 
 ## USAGE
 This code heavily depends on the [BES](https://github.com/mt-cly/BES). 
