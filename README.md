@@ -23,7 +23,8 @@ method achieves 71.7% mIoU and 39.1% mIoU on the validation
 sets of PASCAL VOC 2012 and MS COCO 2014, respectively.
 
 ## framework
-![framework](https://github.com/DL3399/SBE/blob/main/1703999985389.jpg)
+![Overview of our proposed SBE framework, including three core components: boundary label generation by synergistically leveraging class activation
+maps (CAMs) and saliency maps (SMs), boundary detection guided by SMs, and pseudo mask generation by refining CAMs using the extracted boundaries.](https://github.com/DL3399/SBE/blob/main/1703999985389.jpg)
 
 ## USAGE
 This code heavily depends on the [BES](https://github.com/mt-cly/BES). 
