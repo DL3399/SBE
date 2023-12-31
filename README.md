@@ -23,9 +23,7 @@ python run_sample.py --voc12_root xxxxx
 
 
 ## References
-<a id="reference_1">[1]</a>: L. Chen, W. Wu, C. Fu, X. Han, and Y. Zhang, “Weakly supervised
-semantic segmentation with boundary exploration,” in Proc. Eur. Conf.
-Comput. Vis. Springer, 2020.
+<a id="reference_1">[1]</a>: M. Shi, W. Deng, Q. Yi, W. Liu and A. Luo, "Salient-Boundary-Guided Pseudo-Pixel Supervision for Weakly-Supervised Semantic Segmentation," in IEEE Signal Processing Letters, doi: 10.1109/LSP.2023.3343945.
 
 
 
