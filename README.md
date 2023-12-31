@@ -21,12 +21,29 @@ Specify the VOC dataset path and run the command
 python run_sample.py --voc12_root xxxxx
 ```
 
-
-## References
-<a id="reference_1">[1]</a>: M. Shi, W. Deng, Q. Yi, W. Liu and A. Luo, "Salient-Boundary-Guided Pseudo-Pixel Supervision for Weakly-Supervised Semantic Segmentation," in IEEE Signal Processing Letters, doi: 10.1109/LSP.2023.3343945.
-
+## citation
+If you use our codes and models in your research, please cite:
+>@ARTICLE{10363373,
+  author={Shi, Min and Deng, Weizhao and Yi, Qingming and Liu, Weiping and Luo, Aiwen},
+  journal={IEEE Signal Processing Letters}, 
+  title={Salient-Boundary-Guided Pseudo-Pixel Supervision for Weakly-Supervised Semantic Segmentation}, 
+  year={2023},
+  volume={},
+  number={},
+  pages={1-5},
+  doi={10.1109/LSP.2023.3343945}}
 
 
 ## PS
+
 If there is any bug or confusion, I am glad to discuss with you. 
 
+@ARTICLE{10363373,
+  author={Shi, Min and Deng, Weizhao and Yi, Qingming and Liu, Weiping and Luo, Aiwen},
+  journal={IEEE Signal Processing Letters}, 
+  title={Salient-Boundary-Guided Pseudo-Pixel Supervision for Weakly-Supervised Semantic Segmentation}, 
+  year={2023},
+  volume={},
+  number={},
+  pages={1-5},
+  doi={10.1109/LSP.2023.3343945}}
