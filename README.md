@@ -48,6 +48,8 @@ python run_sample.py --voc12_root xxxxx
 
 ## perfermance
 ![pseudo masks](https://github.com/DL3399/SBE/blob/main/1704000054495.jpg)
+Qualitative comparison for pseudo masks: (a) Inputs, (b) GT, (c)
+SEAM [16], (d) EPS [22], (e) RCA [34], (f) BES [19] and (g) our SBE.
  | Dataset | mIoU(val) | mIoU(test) |
 | --- | --- | --- |
 | PASCAL VOC	 | 71.7 | 71.2 |
