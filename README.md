@@ -42,6 +42,7 @@ python run_sample.py --voc12_root xxxxx
 ```
 
 ## perfermance
+![pseudo masks](https://github.com/DL3399/SBE/blob/main/1704000054495.jpg)
  | Dataset | mIoU(val) | mIoU(test) |
 | --- | --- | --- |
 | PASCAL VOC	 | 71.7 | 71.2 |
