@@ -3,6 +3,26 @@
 >
 In this paper, we propose a novel Saliency-guided Boundary Extraction (SBE) framework for supervising WSSS. Our SBE approach employs saliency maps(SMs) to guide the object boundary detection and the attention of CAMs towards foreground regions during the propagation of the coarse localization maps, resulting in highquality pixel-level pseudo masks. The pseudo masks can be further serve as category labels for supervising an off-the-shelf semantic segmentation network such as the DeepLab-v2.
 
+## abstract
+This article presents an innovative approach for
+generating pixel-wise pseudo masks as supervision for imagelevel
+Weakly Supervised Semantic Segmentation (WSSS). This
+is achieved by leveraging abundant object boundaries extracted
+with the guidance of saliency maps (SMs). Initially, we synthesize
+the boundary labels by combining Class Activation Maps (CAMs)
+and SMs. Then, an elaborately-designed joint training strategy is
+employed to fully exploit the complementary relationship between
+the foreground of CAMs and the background and boundary of
+SMs to yield rich object boundaries. Finally, we refine the CAMs
+based on the constraints imposed by the extracted boundaries,
+leading to more accurate pixel-wise pseudo masks.We thoroughly
+evaluate the performance of our proposed pseudo masks through
+extensive experiments, demonstrating their effectiveness as the
+supervision for accurate semantic segmentation. Specifically, our
+method achieves 71.7% mIoU and 39.1% mIoU on the validation
+sets of PASCAL VOC 2012 and MS COCO 2014, respectively.
+
+
 ## USAGE
 This code heavily depends on the [BES](https://github.com/mt-cly/BES). 
 #### Preparation
