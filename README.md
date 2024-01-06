@@ -58,16 +58,9 @@ SEAM [16], (d) EPS [22], (e) RCA [34], (f) BES [19] and (g) our SBE.
 
 ## citation
 If you use our codes and models in your research, please cite:
->@ARTICLE{10363373,
-  author={Shi, Min and Deng, Weizhao and Yi, Qingming and Liu, Weiping and Luo, Aiwen},
-  journal={IEEE Signal Processing Letters}, 
-  title={Salient-Boundary-Guided Pseudo-Pixel Supervision for Weakly-Supervised Semantic Segmentation}, 
-  year={2023},
-  volume={},
-  number={},
-  pages={1-5},
-  doi={10.1109/LSP.2023.3343945}}
-
+```
+M. Shi, W. Deng, Q. Yi, W. Liu and A. Luo, "Salient-Boundary-Guided Pseudo-Pixel Supervision for Weakly-Supervised Semantic Segmentation," in IEEE Signal Processing Letters, vol. 31, pp. 86-90, 2024, doi: 10.1109/LSP.2023.3343945.
+```
 
 ## PS
 
