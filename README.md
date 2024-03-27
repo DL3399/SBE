@@ -29,7 +29,13 @@ Overview of our proposed SBE framework, including three core components: boundar
 
 
 ## USAGE
-This code heavily depends on the [BES](https://github.com/mt-cly/BES). 
+This code heavily depends on the [BES](https://github.com/mt-cly/BES). If an error occurs in the train_cam or make_cam sections, please use [BES](https://github.com/mt-cly/BES) to generate CAM and place it in the corresponding folder for the subsequent steps.
+
+
+
+
+
+
 #### Preparation
 * Dataset: [PASCAL VOC 2012](http://host.robots.ox.ac.uk/pascal/VOC/voc2012/index.html) & [SBD](http://home.bharathh.info/pubs/codes/SBD/download.html)
 * Python: 3.6
