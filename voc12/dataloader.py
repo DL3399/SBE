@@ -60,10 +60,20 @@ def get_img_path(img_name, voc12_root):
     return os.path.join(voc12_root, IMG_FOLDER_NAME, img_name + '.jpg')
 
 
+#numpy版本过高就用这个
 def load_img_name_list(dataset_path):
-    img_name_list = np.loadtxt(dataset_path, dtype=np.int32)
+    # 加载数据并删除下划线
+    with open(dataset_path, 'r') as file:
+        img_name_list = [int(line.strip().replace('_', '')) for line in file]
 
-    return img_name_list
+    return np.array(img_name_list, dtype=np.int32)
+    
+#numpy版本低就用这个但估计用上面那个也行
+#def load_img_name_list(dataset_path):
+#    img_name_list = np.loadtxt(dataset_path, dtype=np.int32)
+
+#    return img_name_list
+
 
 
 class TorchvisionNormalize():
